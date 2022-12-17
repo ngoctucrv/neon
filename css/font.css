@@ -110,7 +110,7 @@
 
 @font-face {
     font-family: BertyScript;
-    src: url("../font/BertyScript.ttf");
+    src: url("../font/BertyScript.otf");
     font-weight: 300;
 }
 
@@ -260,7 +260,7 @@
 
 @font-face {
     font-family: Handsta;
-    src: url("../font/Handsta.otf");
+    src: url("../font/Handsta.tff");
     font-weight: 300;
 }
 
