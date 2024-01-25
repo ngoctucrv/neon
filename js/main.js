@@ -80,34 +80,34 @@ function formatMoney(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
 }
 
-$(document).ready(function() {
-    totalDesign();
-    //bg
-    var coverflow = $("#coverflow").flipster();
-    var src_bg_f = $(".flipster__item--current").data("src");
+// $(document).ready(function() {
+//     totalDesign();
+//     //bg
+//     var coverflow = $("#coverflow").flipster();
+//     var src_bg_f = $(".flipster__item--current").data("src");
 
-    if (src_bg_f) {
-        $("#lenon-slide").css("background-image", "url('" + src_bg_f + "')");
-    }
+//     if (src_bg_f) {
+//         $("#lenon-slide").css("background-image", "url('" + src_bg_f + "')");
+//     }
 
-    $("#lenon-slide #coverflow li").click(function() {
-        var src_bg = $(this).data("src");
-        $("#lenon-slide").css("background-image", "url('" + src_bg + "')");
-    });
-    $("#lenon-slide #coverflow li").on("touchstart", function() {
-        var src_bg = $(this).data("src");
-        $("#lenon-slide").css("background-image", "url('" + src_bg + "')");
-    });
+//     $("#lenon-slide #coverflow li").click(function() {
+//         var src_bg = $(this).data("src");
+//         $("#lenon-slide").css("background-image", "url('" + src_bg + "')");
+//     });
+//     $("#lenon-slide #coverflow li").on("touchstart", function() {
+//         var src_bg = $(this).data("src");
+//         $("#lenon-slide").css("background-image", "url('" + src_bg + "')");
+//     });
 
-    $("#move-neon").draggable({ containment: "#neon", scroll: false });
+//     $("#move-neon").draggable({ containment: "#neon", scroll: false });
 
-    $("#fader").on("input", function() {
-        $(".neon").css("font-size", $(this).val() + "px");
-        var width = (($(".neon")[0].offsetWidth / $("#lenon-slide")[0].offsetWidth) * 100);
-        console.log(width);
-        $("#fontsize").text($(this).val());
-    });
-});
+//     $("#fader").on("input", function() {
+//         $(".neon").css("font-size", $(this).val() + "px");
+//         var width = (($(".neon")[0].offsetWidth / $("#lenon-slide")[0].offsetWidth) * 100);
+//         console.log(width);
+//         $("#fontsize").text($(this).val());
+//     });
+// });
 
 $(".toggle-title").click(function() {
     var index = $(this).next();
